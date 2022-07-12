@@ -1,0 +1,9 @@
+{
+    "name": "Custom New Tab Page",
+    "version": "1.0",
+    "description": "This is my custom theme.",
+    "manifest_version": 3,
+    "chrome_url_overrides": {
+        "newtab": "dashboard.html"
+    }
+}

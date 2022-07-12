@@ -1,0 +1,36 @@
+html {
+
+    /* COLOR SCHEME 1 */
+
+    --primary-color: #222225;
+    --secondary-color: #373536;
+    --third-color: #474546;
+    --primary-font-color: #eceff4;
+    --accent-color: #46dfac;
+
+    /* COLOR SCHEME 2 */
+
+    --primary-color: #222225;
+    --secondary-color: #373536;
+    --third-color: #535152;
+    --primary-font-color: #eceff4;
+    --accent-color: #1e96ce;
+
+    /* COLOR SCHEME 3 */
+
+    --primary-color: #513252;
+    --secondary-color: #7A4069;
+    --third-color: #FFC18E;
+    --primary-font-color: #eceff4;
+    --accent-color: #CA4E79;
+
+    /* COLOR SCHEME 4 */
+
+    --primary-color: #dad7cd;
+    --secondary-color: #a3b18a;
+    --third-color: #588157;
+    --primary-font-color: #eceff4;
+    --accent-color: #344e41;
+
+
+}

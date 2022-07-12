@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+html {
+  --my-font: 'Rajdhani', sans-serif;
+  --primary-color: #222225;
+  --secondary-color: #373536;
+  --third-color: #535152;
+  --primary-font-color: #eceff4;
+  --accent-color: #22c237;
+  --primary-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  --secondary-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-size: 20px;
+  background-color: var(--primary-color);
+}
+
+body {
+  font-family: var(--my-font);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  /* background: aquamarine; */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+  justify-content: center;
+  padding: 1em;
+  box-shadow: var(--primary-box-shadow);
+  background-color: var(--secondary-color);
+}
+
+.inner-container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background: green; */
+}
+
+#clock {
+  color: var(--primary-font-color);
+  justify-items: center;
+  font-size: 3.5em;
+  font-weight: 200;
+  margin: 1;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.bookmark-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-delay: 0.3s;
+  z-index: 1;
+  /* background: red; */
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    height: auto;
+  }
+
+
+  .container>.bookmark-container {
+    flex-direction: column;
+    width: 23%;
+  }
+
+  .bookmark-container>.bookmark-set {
+    width: auto;
+    margin: 1em 0em;
+  }
+
+  .weather-container {
+    width: 30%;
+  }
+}
+
+.bookmark-set {
+  padding: 10px;
+  background-color: var(--third-color);
+  border-radius: 3px;
+  margin: .5em;
+  height: 25px;
+  overflow: hidden;
+  min-width: 300px;
+  transition: 450ms ease-in-out 0ms;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--secondary-box-shadow);
+  /* box-shadow: var(--secondary-box-shadow); */
+  /* background-color: blue; */
+}
+
+.bookmark-set:hover {
+  height: 300px;
+  transition: 450ms ease-in-out 0ms;
+}
+
+.bookmark-set:hover .line {
+  visibility: visible;
+  transition: 450ms ease-in-out 0ms;
+}
+
+.bookmark-inner-container {
+  overflow-y: hidden;
+  height: 80%;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.bookmark-title {
+  display: inline;
+  font-size: 18px;
+  font-weight: 250;
+  color: var(--accent-color);
+}
+
+.bookmark {
+  font-size: 14px;
+  color: var(--primary-font-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.3em;
+  transition: border-bottom-color 200ms ease-in-out 0s;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.bookmark:hover {
+  border-bottom-color: var(--accent-color);
+}
+
+.center {
+  margin: auto;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--accent-color);
+}
+
+.searchbar {
+  font-family: var(--my-font);
+  color: var(--primary-font-color);
+  caret-color: var(--accent-color);
+  width: 800px;
+  max-width: 600px;
+  height: 40px;
+  background-color: var(--third-color);
+  box-shadow: var(--secondary-box-shadow);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 10px;
+  padding-left: 10px;
+  position: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin-top: 5px;
+  background-color: var(--accent-color);
+  visibility: hidden;
+}
